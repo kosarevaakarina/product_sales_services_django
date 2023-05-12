@@ -44,3 +44,31 @@ def contacts(request):
         "title": "Обратная связь"
     }
     return render(request, 'catalog/contacts.html', context)
+
+
+def save_product(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        description = request.POST.get('description')
+        image = request.POST.get('image')
+        price = request.POST.get('price')
+        created_date = request.POST.get('created_date')
+        changed_date = request.POST.get('changed_date')
+        category = request.POST.get('category')
+        if category == 'Бытовая техника':
+            category_one = Category.objects.filter(pk=1)
+            Product(name=name, description=description, image=image, category=category_one[0], price=price,
+                    created_date=created_date, changed_date=changed_date).save()
+        if category == 'Кухонная мебель':
+            category_one = Category.objects.filter(pk=2)
+            Product(name=name, description=description, image=image, category=category_one[0], price=price,
+                    created_date=created_date, changed_date=changed_date).save()
+        if category == 'Кухонная посуда':
+            category_one = Category.objects.filter(pk=3)
+            Product(name=name, description=description, image=image, category=category_one[0], price=price,
+                    created_date=created_date, changed_date=changed_date).save()
+        print(f'{name} - {price}: {category}')
+    context = {
+        "title": "Добавление товара"
+    }
+    return render(request, 'catalog/save_product.html', context)
