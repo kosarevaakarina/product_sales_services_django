@@ -1,74 +1,82 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect
+from django.urls import reverse_lazy, reverse
+from django.views import generic
 
-from catalog.models import Product, Contact, Category
-
-
-def home(request):
-    last_products = Product.objects.order_by('-created_date')[:5]
-    for product in last_products:
-        print(product.name)
-    context = {
-        "category_list": Category.objects.all(),
-        "product_list": Product.objects.all()[:3],
-        "title": "Товары месяца"
-    }
-    return render(request, 'catalog/home.html', context)
+from catalog.models import Product, Contact, Blog
 
 
-def catalog(request):
-    context = {
-        "category_list": Category.objects.all(),
-        "product_list": Product.objects.all(),
+class ProductsListView(generic.ListView):
+    model = Product
+    extra_context = {
         "title": "Каталог товаров"
     }
-    return render(request, 'catalog/catalog.html', context)
 
 
-def product_items(request, pk):
-    product_item = Product.objects.get(pk=pk)
-    context = {
-        'product': product_item,
-        'title': product_item.name
+class ProductDetailView(generic.DetailView):
+    model = Product
+
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        context_data['title'] = context_data['product']
+        return context_data
+
+
+class ContactCreateView(generic.CreateView):
+    model = Contact
+    fields = ('name', 'phone', 'message')
+    success_url = reverse_lazy('catalog:home')
+
+
+class ProductCreateView(generic.CreateView):
+    model = Product
+    fields = ('name', 'description', 'image', 'category', 'price', 'created_date', 'changed_date')
+    success_url = reverse_lazy('catalog:catalog')
+
+
+class BlogListView(generic.ListView):
+    model = Blog
+    extra_context = {
+        "title": "Новости дня"
     }
-    return render(request, 'catalog/product_items.html', context)
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(is_published=True)
+        return queryset
 
 
-def contacts(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        message = request.POST.get('message')
-        Contact(name=name, phone=phone, message=message).save()
-        print(f'You have new message from {name}({phone}): {message}')
-    context = {
-        "title": "Обратная связь"
-    }
-    return render(request, 'catalog/contacts.html', context)
+class BlogDetailView(generic.DetailView):
+    model = Blog
+
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        return context_data
 
 
-def save_product(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        description = request.POST.get('description')
-        image = request.POST.get('image')
-        price = request.POST.get('price')
-        created_date = request.POST.get('created_date')
-        changed_date = request.POST.get('changed_date')
-        category = request.POST.get('category')
-        if category == 'Бытовая техника':
-            category_one = Category.objects.filter(pk=1)
-            Product(name=name, description=description, image=image, category=category_one[0], price=price,
-                    created_date=created_date, changed_date=changed_date).save()
-        if category == 'Кухонная мебель':
-            category_one = Category.objects.filter(pk=2)
-            Product(name=name, description=description, image=image, category=category_one[0], price=price,
-                    created_date=created_date, changed_date=changed_date).save()
-        if category == 'Кухонная посуда':
-            category_one = Category.objects.filter(pk=3)
-            Product(name=name, description=description, image=image, category=category_one[0], price=price,
-                    created_date=created_date, changed_date=changed_date).save()
-        print(f'{name} - {price}: {category}')
-    context = {
-        "title": "Добавление товара"
-    }
-    return render(request, 'catalog/save_product.html', context)
+class BlogCreateView(generic.CreateView):
+    model = Blog
+    fields = ('title', 'slug', 'content', 'image', 'create_date')
+    success_url = reverse_lazy('catalog:home')
+
+
+class BlogUpdateView(generic.UpdateView):
+    model = Blog
+    fields = ('title', 'slug', 'content', 'image', 'create_date')
+    success_url = reverse_lazy('catalog:home')
+
+
+class BlogDeleteView(generic.DeleteView):
+    model = Blog
+    success_url = reverse_lazy('catalog:home')
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(is_published=True)
+        return queryset
+
+
+def count_of_view(request, pk):
+    blog_item = get_object_or_404(Blog, pk=pk)
+    blog_item.count_of_view += 1
+    blog_item.save()
+    return redirect(reverse('catalog:home'))
