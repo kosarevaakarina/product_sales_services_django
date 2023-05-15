@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from catalog.models import Category, Product, Contact, Blog
+from catalog.models import Category, Product, Contact
 
 
 @admin.register(Category)
@@ -22,8 +22,3 @@ class ContactAdmin(admin.ModelAdmin):
     search_fields = ('name', 'phone')
 
 
-@admin.register(Blog)
-class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'count_of_view')
-    list_filter = ('title',)
-    search_fields = ('title',)
