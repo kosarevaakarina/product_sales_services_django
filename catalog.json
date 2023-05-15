@@ -390,6 +390,695 @@
     }
   },
   {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2023-05-12T08:18:13.339Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Мультиварка - 6543: Бытовая техника",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2023-05-12T08:24:07.721Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Мультиварка - 6543: Бытовая техника",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2023-05-13T15:53:57.133Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Тарелка - 540: Кухонная мебель",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.495Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "Карина - 5555",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.504Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "Карина - 5555",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.506Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "19",
+      "object_repr": "М - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.508Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "18",
+      "object_repr": "М - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.510Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "17",
+      "object_repr": "М - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.512Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "21",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.513Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "20",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.516Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "16",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.517Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "15",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.519Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "14",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.521Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "13",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.522Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "12",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.524Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.525Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2023-05-13T16:30:11.527Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "Мария Сергеевна - 8900454545",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2023-05-13T16:44:28.993Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Тарелка",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2023-05-13T17:42:44.348Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Blog object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2023-05-13T17:56:14.544Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Blog object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"\\u0427\\u0435\\u043b\\u043e\\u0432\\u0435\\u043a\\u043e\\u043f\\u043e\\u043d\\u044f\\u0442\\u043d\\u044b\\u0439 URL\", \"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0438\\u043c\\u043e\\u0435\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2023-05-13T18:22:22.253Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Blog object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2023-05-14T05:55:22.168Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Зачем россияне кладут грязную одежду в микроволновку",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2023-05-14T06:08:15.755Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Hello",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2023-05-14T07:33:21.374Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "ляля",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2023-05-14T08:17:43.485Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "kjkj",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2023-05-14T08:17:47.870Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Зачем россияне кладут грязную одежду в микроволновку",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2023-05-15T15:27:29.382Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "3",
+      "object_repr": "a",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2023-05-15T15:27:34.137Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "2",
+      "object_repr": "did",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2023-05-15T15:27:37.641Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "НОвость дня",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2023-05-15T15:27:46.678Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "НОвость дня",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2023-05-15T15:36:02.033Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "ф",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2023-05-15T15:36:08.103Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Духовой шкаф",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2023-05-15T15:36:10.874Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Кухонный гарнитур",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2023-05-15T15:36:13.627Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Кухонный стол",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2023-05-15T16:06:05.850Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "3",
+      "object_repr": "a",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2023-05-15T16:06:05.893Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "2",
+      "object_repr": "did",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2023-05-15T16:06:05.895Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "НОвость дня",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2023-05-15T16:40:03.280Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "6",
+      "object_repr": "ghbr",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2023-05-15T16:40:29.162Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "7",
+      "object_repr": "a",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2023-05-15T16:40:57.377Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "7",
+      "object_repr": "a",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2023-05-15T17:00:05.166Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "4",
+      "object_repr": "Зачем россияне кладут грязную одежду в микроволновку?",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2023-05-15T17:00:22.213Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "8",
+      "object_repr": "alchemy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2023-05-15T19:30:25.353Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "9",
+      "object_repr": "Title",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2023-05-15T19:30:25.381Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "8",
+      "object_repr": "alchemy",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2023-05-15T19:32:31.967Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Духовой шкаф",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2023-05-15T19:32:50.533Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Кухонный гарнитур",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2023-05-15T19:32:53.602Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Кухонный стол",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2023-05-15T19:32:56.801Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Микроволновая печь",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2023-05-15T19:32:59.506Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Набор ножей",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2023-05-15T19:33:01.890Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Посудомоечная машина",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2023-05-15T19:33:03.999Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Чайный сервиз",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2023-05-15T19:33:06.213Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Набор ножей",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0433\\u043e \\u0438\\u0437\\u043c\\u0435\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -714,6 +1403,222 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add blog",
+      "content_type": 10,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change blog",
+      "content_type": 10,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete blog",
+      "content_type": 10,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view blog",
+      "content_type": 10,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Обратная связь",
+      "content_type": 11,
+      "codename": "add_feedback"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Обратная связь",
+      "content_type": 11,
+      "codename": "change_feedback"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Обратная связь",
+      "content_type": 11,
+      "codename": "delete_feedback"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Обратная связь",
+      "content_type": 11,
+      "codename": "view_feedback"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Товар",
+      "content_type": 12,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Товар",
+      "content_type": 12,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Товар",
+      "content_type": 12,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Товар",
+      "content_type": 12,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Категория товара",
+      "content_type": 13,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Категория товара",
+      "content_type": 13,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Категория товара",
+      "content_type": 13,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view Категория товара",
+      "content_type": 13,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add Контакт компании",
+      "content_type": 14,
+      "codename": "add_companycontact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change Контакт компании",
+      "content_type": 14,
+      "codename": "change_companycontact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete Контакт компании",
+      "content_type": 14,
+      "codename": "delete_companycontact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view Контакт компании",
+      "content_type": 14,
+      "codename": "view_companycontact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add новость",
+      "content_type": 15,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change новость",
+      "content_type": 15,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete новость",
+      "content_type": 15,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view новость",
+      "content_type": 15,
+      "codename": "view_blog"
+    }
+  },
+  {
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -804,6 +1709,54 @@
     }
   },
   {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "catalog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "app_catalog",
+      "model": "feedback"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "app_catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "app_catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "app_catalog",
+      "model": "companycontact"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
     "model": "sessions.session",
     "pk": "3w96jvd2h9u8lnuti296jv91ft005klg",
     "fields": {
@@ -852,8 +1805,8 @@
       "image": "products/dishwasher.jpg",
       "category": 1,
       "price": 19714,
-      "created_date": "2023-05-08T09:49:12Z",
-      "changed_date": "2023-05-08T09:49:13Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -865,8 +1818,8 @@
       "image": "products/kitchenset_u5CsH1m.jpg",
       "category": 3,
       "price": 21926,
-      "created_date": "2023-05-08T09:54:45Z",
-      "changed_date": "2023-05-08T09:54:56Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -878,8 +1831,8 @@
       "image": "products/teaset.jpg",
       "category": 2,
       "price": 1527,
-      "created_date": "2023-05-08T09:58:09Z",
-      "changed_date": "2023-05-08T09:58:45Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -891,8 +1844,8 @@
       "image": "products/oven.png",
       "category": 1,
       "price": 17623,
-      "created_date": "2023-05-08T10:11:15Z",
-      "changed_date": "2023-05-08T10:15:00Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -904,8 +1857,8 @@
       "image": "products/table_8Egsxo1.jpg",
       "category": 3,
       "price": 7536,
-      "created_date": "2023-05-08T18:30:20Z",
-      "changed_date": "2023-05-08T18:30:23Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -917,8 +1870,8 @@
       "image": "products/microwave_SJq8qaa.jpg",
       "category": 1,
       "price": 4256,
-      "created_date": "2023-05-08T18:32:27Z",
-      "changed_date": "2023-05-08T18:32:28Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -930,8 +1883,8 @@
       "image": "products/knife.jpg",
       "category": 2,
       "price": 768,
-      "created_date": "2023-05-08T18:34:08Z",
-      "changed_date": "2023-05-08T18:34:09Z"
+      "created_date": "2023-05-08",
+      "changed_date": "2023-05-08"
     }
   },
   {
@@ -950,6 +1903,41 @@
       "name": "Маша",
       "phone": "0000",
       "message": "Hi"
+    }
+  },
+  {
+    "model": "catalog.contact",
+    "pk": 22,
+    "fields": {
+      "name": "Светочка",
+      "phone": "78797",
+      "message": "Алло"
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+      "title": "Зачем россияне кладут грязную одежду в микроволновку?",
+      "slug": "зачем-россияне-кладут-грязную-одежду-в-микроволновку",
+      "content": "Оказывается, с помощью микроволновки можно отстирать сильно въевшиеся пятна с грязной одежды. \r\nОчистка в таких ваннах происходит за счёт совместного действия различных нелинейных эффектов, возникающих в жидкости под действием мощных ультразвуковых колебаний. Главный такой эффект — это кавитация. Это процесс образования пузырьков в жидкости под воздействием ультразвуковых волн. При продолжающемся воздействии пузырьки схлопываются и производят эффект ударной волны, которая разрушает загрязнения.",
+      "image": "blog/useofmicrowave.jpeg",
+      "create_date": "2023-05-15",
+      "is_published": true,
+      "count_of_view": 4
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+      "title": "Форма имеет значение",
+      "slug": "форма-имеет-значение",
+      "content": "Существует предположение: оригинальная форма бокала для мартини была придумана во времена сухого закона в США. Объясняется это тем, что из открытой ёмкости с широким краем проще выплеснуть содержимое во время полицейского рейда. Позднее эти коктейльные бокалы стали неофициальным символом всех баров мира.",
+      "image": "blog/martiniglass.png",
+      "create_date": "2023-05-15",
+      "is_published": true,
+      "count_of_view": 2
     }
   }
 ]
