@@ -9,11 +9,11 @@
                 </h5>
                 <div class="mb-1 text-muted">{{ blog.create_date }}</div>
                 <p class="card-text mb-auto">{{ blog.content | truncatechars:100 }}</p>
-                <a href="{% url 'catalog:blog_detail' blog.pk %}">Подробнее</a>
-                <a href="{% url 'catalog:blog_update' blog.pk %}" class="btn btn-secondary my-3"
+                <a href="{% url 'blog:blog_detail' blog.pk %}">Подробнее</a>
+                <a href="{% url 'blog:blog_update' blog.pk %}" class="btn btn-secondary my-3"
                        style="background: green">Изменить</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" src="{% mediapath blog.image %}"
+            <img class="card-img-right flex-auto d-none d-md-block" src="/media/{{ blog.image }}"
                  alt="Card image cap" width="250" height="200">
         </div>
     </div>
