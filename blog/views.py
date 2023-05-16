@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 from blog.models import Blog
@@ -55,4 +54,3 @@ class BlogDeleteView(generic.DeleteView):
         queryset = super().get_queryset()
         queryset = queryset.filter(is_published=True)
         return queryset
-
