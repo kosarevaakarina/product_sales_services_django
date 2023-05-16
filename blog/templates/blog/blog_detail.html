@@ -2,7 +2,6 @@
 
 {% block content %}
 {% load tags %}
-
 <div class="container">
     <div class="row featurette">
         <div class="col-md-7">
@@ -10,8 +9,7 @@
             <p class="lead">{{ blog.content }}</p>
         </div>
         <div class="col-md-5">
-            <img width="350" height="300" class="featurette-image img-fluid mx-auto" src="/media/{{ blog.image }}"
-                 alt="Generic placeholder image">
+            <img width="350" height="300" class="featurette-image img-fluid mx-auto" src={% mediapath blog.image %}>
         </div>
     </div>
 </div>
