@@ -25,6 +25,7 @@ class BlogDetailView(generic.DetailView):
 
     def get_object(self, queryset=None):
         object_item = super().get_object(queryset)
+        object_item.increase_count_of_view()
         object_item.save()
         return object_item
 
@@ -55,9 +56,3 @@ class BlogDeleteView(generic.DeleteView):
         queryset = queryset.filter(is_published=True)
         return queryset
 
-
-def count_of_view(request, pk):
-    blog_item = get_object_or_404(Blog, pk=pk)
-    blog_item.count_of_view += 1
-    blog_item.save()
-    return redirect(reverse('blog:home'))

@@ -11,6 +11,5 @@ urlpatterns = [
     path('<slug:slug>/', BlogDetailView.as_view(), name='blog_detail'),
     path('blog/form/', BlogCreateView.as_view(), name='blog_form'),
     path('blog/update/<int:pk>/', BlogUpdateView.as_view(), name='blog_update'),
-    path('blog/delete/<int:pk>/', BlogDeleteView.as_view(), name='blog_confirm_delete'),
-    path('blog/count/<int:pk>/', count_of_view, name='count_of_view')
+    path('blog/delete/<int:pk>/', BlogDeleteView.as_view(), name='blog_confirm_delete')
 ]

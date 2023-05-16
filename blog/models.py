@@ -27,6 +27,10 @@ class Blog(models.Model):
         self.slug = slugify(eng_title, allow_unicode=True)
         super(Blog, self).save(*args, **kwargs)
 
+    def increase_count_of_view(self):
+        self.count_of_view += 1
+        self.save()
+
     def get_absolute_url(self):
         return reverse('blog_detail', kwargs={'slug': self.slug})
 
