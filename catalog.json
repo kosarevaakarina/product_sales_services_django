@@ -1,0 +1,78 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Бытовая техника",
+      "description": "Бытовая техника для кухни по низкой цене"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Кухонная посуда",
+      "description": "Посуда на любой вкус и кошелек"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Кухонная мебель",
+      "description": "Кухонная мебель из качественного материала"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Посудомоечная машина",
+      "description": "Компактная посудомоечная машина, не требующая специального подключения к воде",
+      "image": "",
+      "category": 1,
+      "price": 19714,
+      "created_date": "2023-05-08T09:49:12Z",
+      "changed_date": "2023-05-08T09:49:13Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Кухонный гарнитур",
+      "description": "Габаритный размер готового набора модулей: 220 см",
+      "image": "",
+      "category": 3,
+      "price": 21926,
+      "created_date": "2023-05-08T09:54:45Z",
+      "changed_date": "2023-05-08T09:54:56Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Чайный сервиз",
+      "description": "Сервиз чайный (с чайником) на 4 персоны из 11 предметов",
+      "image": "",
+      "category": 2,
+      "price": 1527,
+      "created_date": "2023-05-08T09:58:09Z",
+      "changed_date": "2023-05-08T09:58:45Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Духовой шкаф",
+      "description": "Электрический встраиваемый духовой шкаф, 60 см",
+      "image": "",
+      "category": 1,
+      "price": 17623,
+      "created_date": "2023-05-08T10:11:15Z",
+      "changed_date": "2023-05-08T10:15:00Z"
+    }
+  }
+]

@@ -3,4 +3,5 @@ env/
 catalog/__pycache__/
 catalog/migrations/__pycache__/
 config/__pycache__/
-
+catalog/management/commands/__pycache__/
+.env
