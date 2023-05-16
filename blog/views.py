@@ -23,6 +23,11 @@ class BlogDetailView(generic.DetailView):
         context_data = super().get_context_data(**kwargs)
         return context_data
 
+    def get_object(self, queryset=None):
+        object_item = super().get_object(queryset)
+        object_item.save()
+        return object_item
+
 
 class BlogCreateView(generic.CreateView):
     model = Blog
@@ -38,7 +43,7 @@ class BlogUpdateView(generic.UpdateView):
     fields = ('title', 'slug', 'content', 'image', 'create_date')
 
     def get_success_url(self):
-        return reverse('blog:blog_detail', kwargs={'pk': self.object.pk})
+        return reverse('blog:blog_detail', kwargs={'slug': self.object.slug})
 
 
 class BlogDeleteView(generic.DeleteView):
@@ -56,7 +61,3 @@ def count_of_view(request, pk):
     blog_item.count_of_view += 1
     blog_item.save()
     return redirect(reverse('blog:home'))
-
-
-def show_post(request, post_slug):
-    post = get_object_or_404(Blog, slug=post_slug)

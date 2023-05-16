@@ -1,4 +1,5 @@
 from django.db import models
+from transliterate import translit
 from django.urls import reverse
 from django.utils.text import slugify
 
@@ -22,11 +23,12 @@ class Blog(models.Model):
         return f'{self.title}'
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.title, allow_unicode=True)
+        eng_title = translit(self.title, 'ru', reversed=True)
+        self.slug = slugify(eng_title, allow_unicode=True)
         super(Blog, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('blog_detail', kwargs={'post_slug': self.slug})
+        return reverse('blog_detail', kwargs={'slug': self.slug})
 
     class Meta:
         verbose_name = 'новость'
