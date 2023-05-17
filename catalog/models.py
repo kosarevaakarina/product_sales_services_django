@@ -22,11 +22,11 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/', verbose_name='Изображение', **NULLABLE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Категория')
     price = models.IntegerField(verbose_name='Цена за покупку')
-    created_date = models.DateTimeField(verbose_name='Дата создания')
-    changed_date = models.DateTimeField(verbose_name='Дата последнего изменения')
+    created_date = models.DateField(verbose_name='Дата создания')
+    changed_date = models.DateField(verbose_name='Дата последнего изменения')
 
     def __str__(self):
-        return f'{self.name} - {self.price}: {self.category}'
+        return f'{self.name}'
 
     class Meta:
         verbose_name = 'продукт'
@@ -46,3 +46,4 @@ class Contact(models.Model):
         verbose_name = 'контакт'
         verbose_name_plural = 'контакты'
         ordering = ('name',)
+

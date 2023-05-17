@@ -1,0 +1,24 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+{% load tags %}
+
+<div class="container">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2>{{ blog.title }}</h2>
+            <p class="lead">{{ blog.content }}</p>
+        </div>
+        <div class="col-md-5">
+            <img width="350" height="300" class="featurette-image img-fluid mx-auto" src="/media/{{ blog.image }}"
+                 alt="Generic placeholder image">
+        </div>
+    </div>
+</div>
+<div>
+<a href="{% url 'blog:home' %}" class="btn btn-secondary my-3"
+   style="background: #0062cc">Назад</a>
+<a href="{% url 'blog:blog_confirm_delete' blog.pk %}" class="btn btn-secondary my-3"
+   style="background: red">Удалить</a>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'catalog/base.html' %}
+{% block content %}
+    {% load tags %}
+    <div class="container">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-5 box-shadow h-md-450">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <small class="d-inline-block mb-2 text-primary">{{ product.category }}</small>
+                    <h3 class="mb-0">
+                        <a class="text-dark" href="#">Цена: {{ product.price }} р</a>
+                    </h3>
+                    <small class="mb-1 text-muted">{{ product.created_date }}</small>
+                    <p class="card-text mb-auto">{{ product.description }}</p>
+                    <a href="{% url 'catalog:product_items' product.pk %}" class="btn btn-secondary my-3"
+                       style="background: #0062cc">Купить</a>
+                </div>
+                <img src="{% mediapath product.image %}" alt={{ product.name }} width="350" height="300" id="part1">
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="{% url 'catalog:catalog' %}" class="btn btn-secondary my-3"
+           style="background: #0062cc">Назад</a>
+    </div>
+{% endblock %}

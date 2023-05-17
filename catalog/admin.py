@@ -20,3 +20,5 @@ class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'phone')
     list_filter = ('name',)
     search_fields = ('name', 'phone')
+
+
