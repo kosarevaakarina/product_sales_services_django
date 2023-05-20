@@ -1,7 +1,6 @@
 from django.db import models
-from transliterate import translit
 from django.urls import reverse
-from django.utils.text import slugify
+
 
 NULLABLE = {'blank': True, 'null': True}
 
@@ -21,11 +20,6 @@ class Blog(models.Model):
 
     def __str__(self):
         return f'{self.title}'
-
-    def save(self, *args, **kwargs):
-        eng_title = translit(self.title, 'ru', reversed=True)
-        self.slug = slugify(eng_title, allow_unicode=True)
-        super(Blog, self).save(*args, **kwargs)
 
     def increase_count_of_view(self):
         self.count_of_view += 1
