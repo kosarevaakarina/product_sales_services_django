@@ -1,5 +1,7 @@
 from django.urls import reverse_lazy, reverse
 from django.views import generic
+from django.utils.text import slugify
+from transliterate import translit
 from blog.models import Blog
 
 
@@ -32,10 +34,13 @@ class BlogDetailView(generic.DetailView):
 class BlogCreateView(generic.CreateView):
     model = Blog
     fields = ('title', 'content', 'image', 'create_date')
-    blogs = Blog.objects.all()
-    for blog in blogs:
-        blog.save()
     success_url = reverse_lazy('blog:home')
+
+    def form_valid(self, form):
+        post = form.save(commit=False)
+        eng_title = translit(post.title, 'ru', reversed=True)
+        post.slug = slugify(eng_title, allow_unicode=True)
+        return super(BlogCreateView, self).form_valid(form)
 
 
 class BlogUpdateView(generic.UpdateView):
