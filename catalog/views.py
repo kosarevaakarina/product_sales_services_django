@@ -27,6 +27,9 @@ class ContactCreateView(generic.CreateView):
 
 class ProductCreateView(generic.CreateView):
     model = Product
+    extra_context = {
+        "title": "Внести новый товар"
+    }
     fields = ('name', 'description', 'image', 'category', 'price', 'created_date', 'changed_date')
     success_url = reverse_lazy('catalog:catalog')
 
