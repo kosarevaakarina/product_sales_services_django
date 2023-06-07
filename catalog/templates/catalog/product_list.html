@@ -4,4 +4,7 @@
     {% for product in product_list %}
         {% include 'catalog/includes/inc_product_card.html' %}
     {% endfor %}
+    <div class="container">
+    <a href="{% url 'catalog:save_product' %}" class="btn btn-secondary my-3"
+                       style="background: darkgreen">Создать</a>
 {% endblock %}
