@@ -7,4 +7,4 @@ catalog/management/commands/__pycache__/
 catalog/templatetags/__pycache__/
 blog/__pycache__/
 catalog/management/__pycache__/
-
+blog/migrations/__pycache__/
