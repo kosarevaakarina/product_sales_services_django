@@ -1,0 +1,36 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+    <div class="col">
+        <form class="row" autocomplete="off" method='post'>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Добавить товар
+                    </div>
+                    <div class="card-body">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" class="btn btn-success" value="Создать">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Версии
+                    </div>
+                    <div class="card-body">
+                    <table class="table">
+                        {{ formset.management_form }}
+                        {% for form in formset.forms %}
+                            <tr class="subject-form">
+                                <td>{{ form.as_p }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    </div>
+                </div>
+        </form>
+    </div>
+{% endblock %}

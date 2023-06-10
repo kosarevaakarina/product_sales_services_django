@@ -6,6 +6,11 @@
                     </span>
         <h5 style="margin: auto; margin-top: 20px">{{product.name}}</h5>
         <div class="card-body">
+            {% for version in product.version_set.all %}
+                    {% if version.is_active %}
+                        <small class="text-muted">Версия: {{version.num_of_version}} ({{ version.title }})</small><br>
+                    {% endif %}
+                {% endfor %}
             <small class="text-muted">{{product.changed_date}}</small>
             <p class="card-text">{{product.description | truncatechars:100}}</p>
             <h4 style="color: #a41515">Цена: {{product.price}} р.</h4>
