@@ -1,8 +1,9 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
-    <div class="col-3">
+    <div class="container">
         <div class="col-6">
+            <div class="card-header"></div>
             <div class="card-body">
                 <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
@@ -10,6 +11,7 @@
                     <button type="submit" class="btn btn-success">Войти</button>
                 </form>
             </div>
+            <div class="card-header"></div>
         </div>
     </div>
 {% endblock %}
