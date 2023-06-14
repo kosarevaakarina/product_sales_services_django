@@ -1,12 +1,12 @@
 from django.contrib.auth import login
 from django.contrib.auth.tokens import default_token_generator
+from django.contrib.auth.views import PasswordResetConfirmView
 from django.core.exceptions import ValidationError
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.utils.http import urlsafe_base64_decode
 from django.views import generic
-
-from users.forms import UserForm, UserRegisterForm
+from users.forms import UserForm, UserRegisterForm, PasswordResetConfirmForm
 from users.models import User
 from users.services import send_mail_for_verify
 
@@ -19,6 +19,17 @@ class ProfileUpdateView(generic.UpdateView):
     def get_object(self, queryset=None):
         return self.request.user
 
+    def form_valid(self, form):
+        if form.is_valid():
+            self.object = form.save()
+            if form.data.get('need_generate', False):
+                self.object.set_passeword(
+                    self.object.make_random_password(12)
+                )
+                self.object.save()
+
+        return super().form_valid(form)
+
 
 class RegisterView(generic.CreateView):
     model = User
@@ -28,7 +39,6 @@ class RegisterView(generic.CreateView):
     def form_valid(self, form):
         response = super().form_valid(form)
         user = form.save()
-
         send_mail_for_verify(self.request, user)
         return response
 
@@ -53,3 +63,9 @@ class EmailVerify(generic.View):
         except (TypeError, ValueError, OverflowError, User.DoesNotExist, ValidationError):
             user = None
         return user
+
+
+class NewPasswordResetConfirmView(PasswordResetConfirmView):
+    form_class = PasswordResetConfirmForm
+    template_name = 'users/password_reset_confirm.html'
+    success_url = reverse_lazy('users:password_reset_complete')
