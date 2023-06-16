@@ -26,6 +26,11 @@ class ContactCreateView(generic.CreateView):
     model = Contact
     fields = ('name', 'phone', 'message')
 
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.user = self.request.user
+        self.object.save()
+
 
 class ProductCreateView(generic.CreateView):
     model = Product
@@ -38,7 +43,6 @@ class ProductCreateView(generic.CreateView):
 
 class ProductUpdateView(generic.UpdateView):
     model = Product
-    # fields = '__all__'
     form_class = ProductForm
     template_name = 'catalog/product_form_with_formset.html'
 

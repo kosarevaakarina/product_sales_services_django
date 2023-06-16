@@ -1,11 +1,13 @@
-from django.contrib.auth.forms import UserChangeForm, UserCreationForm, SetPasswordForm
+from django.contrib.auth.forms import UserChangeForm, UserCreationForm, SetPasswordForm, PasswordResetForm
 from django import forms
+from transliterate.utils import _
 
 from catalog.forms import FormStyleMixin
 from users.models import User
 
 
 class UserForm(FormStyleMixin, UserChangeForm):
+    """Форма для профиля пользователя"""
     class Meta:
         model = User
         fields = ('email', 'first_name', 'last_name', 'phone', 'avatar')
@@ -17,11 +19,29 @@ class UserForm(FormStyleMixin, UserChangeForm):
 
 
 class UserRegisterForm(FormStyleMixin, UserCreationForm):
+    """Форма для регистрации пользователя"""
     class Meta:
         model = User
-        fields = ('email', 'password1', 'password2')
+        fields = ('email', 'password1', 'password2', 'phone', 'avatar')
 
 
-class PasswordResetConfirmForm(SetPasswordForm):
+class CustomPasswordResetForm(FormStyleMixin, PasswordResetForm):
+    """Форма для сброса пароля"""
+    email = forms.EmailField(
+        label=_("Email"),
+        max_length=50,
+        widget=forms.EmailInput(attrs={"autocomplete": "email"}),
+    )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
     class Meta:
         model = User
+
+
+class PasswordResetConfirmForm(FormStyleMixin, SetPasswordForm):
+    """Форма для обновления пароля"""
+    class Meta:
+        model = User
+
