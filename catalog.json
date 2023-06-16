@@ -1079,6 +1079,526 @@
     }
   },
   {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2023-05-16T14:54:43.658Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "4",
+      "object_repr": "Зачем россияне кладут грязную одежду в микроволновку?",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2023-05-16T15:00:11.464Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "6",
+      "object_repr": "News",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2023-05-16T15:00:11.467Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "7",
+      "object_repr": "new",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2023-05-16T15:00:25.270Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "4",
+      "object_repr": "Зачем россияне кладут грязную одежду в микроволновку?",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2023-05-16T15:09:47.689Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "8",
+      "object_repr": "новость",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.698Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "18",
+      "object_repr": "alchemy",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.715Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "17",
+      "object_repr": "alchemy",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.717Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "11",
+      "object_repr": "kjkjk",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.718Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "10",
+      "object_repr": "лол",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.720Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "9",
+      "object_repr": "новая новость",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2023-05-16T17:04:30.721Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "8",
+      "object_repr": "новость",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2023-05-16T17:10:03.863Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "19",
+      "object_repr": "f",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2023-05-16T17:10:03.870Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "20",
+      "object_repr": "l",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2023-05-16T17:10:03.872Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "26",
+      "object_repr": "o",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2023-05-16T17:34:29.607Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "27",
+      "object_repr": "alchemy",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2023-05-16T17:34:29.615Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "30",
+      "object_repr": "ggggg",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2023-05-20T02:20:42.852Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "32",
+      "object_repr": "лапша",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2023-05-20T02:20:42.871Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "33",
+      "object_repr": "последняя новость",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2023-05-20T08:29:21.799Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Карина Косарева",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2023-05-20T08:30:11.609Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Марина Вяткина",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2023-05-20T10:38:22.471Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "34",
+      "object_repr": "aa",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2023-05-20T10:39:16.001Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Елена Кожанова",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2023-05-20T12:05:45.908Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "Пора работать",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2023-05-20T12:06:17.865Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Рассылка №1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2023-05-28T12:53:34.086Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "Рассылка №2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2023-05-28T09:06:48.675Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Рассылка №1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u041f\\u0435\\u0440\\u0438\\u043e\\u0434\\u0438\\u0447\\u043d\\u043e\\u0441\\u0442\\u044c\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\", \"\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2023-05-28T14:56:21.531Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Карина Косарева",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2023-05-28T14:57:43.406Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Рассылка №1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2023-05-28T14:57:43.419Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "Рассылка №2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2023-05-28T15:05:49.777Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "3",
+      "object_repr": "Рассылка №3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2023-05-28T15:05:49.785Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "4",
+      "object_repr": "Рассылка №4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2023-05-28T15:05:49.786Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "5",
+      "object_repr": "Рассылка №5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2023-06-08T08:15:30.326Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "1",
+      "object_repr": "обновление - 1 (Духовой шкаф)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2023-06-08T08:16:00.776Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "2",
+      "object_repr": "None - 1 (Кухонный гарнитур)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2023-06-10T18:38:06.456Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "2",
+      "object_repr": "None - 1 (Кухонный гарнитур)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2023-06-10T18:38:11.755Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "1",
+      "object_repr": "обновление - 1 (Духовой шкаф)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2023-06-10T18:55:19.860Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "2",
+      "object_repr": "None - 1 (Кухонный гарнитур)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2023-06-10T20:01:08.619Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "4",
+      "object_repr": "MAX - 1 (Кухонный стол)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2023-06-10T20:01:08.646Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "3",
+      "object_repr": "test - 1 (Кухонный стол)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2023-06-10T20:01:08.652Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "2",
+      "object_repr": "None - 1 (Кухонный гарнитур)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -1619,11 +2139,515 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add клиент",
+      "content_type": 16,
+      "codename": "add_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change клиент",
+      "content_type": 16,
+      "codename": "change_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete клиент",
+      "content_type": 16,
+      "codename": "delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view клиент",
+      "content_type": 16,
+      "codename": "view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add рассылка",
+      "content_type": 17,
+      "codename": "add_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change рассылка",
+      "content_type": 17,
+      "codename": "change_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete рассылка",
+      "content_type": 17,
+      "codename": "delete_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view рассылка",
+      "content_type": 17,
+      "codename": "view_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add сообщение",
+      "content_type": 18,
+      "codename": "add_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change сообщение",
+      "content_type": 18,
+      "codename": "change_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete сообщение",
+      "content_type": 18,
+      "codename": "delete_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view сообщение",
+      "content_type": 18,
+      "codename": "view_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add лог отправки письма",
+      "content_type": 19,
+      "codename": "add_mailinglogs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change лог отправки письма",
+      "content_type": 19,
+      "codename": "change_mailinglogs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete лог отправки письма",
+      "content_type": 19,
+      "codename": "delete_mailinglogs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view лог отправки письма",
+      "content_type": 19,
+      "codename": "view_mailinglogs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add task result",
+      "content_type": 20,
+      "codename": "add_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change task result",
+      "content_type": 20,
+      "codename": "change_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete task result",
+      "content_type": 20,
+      "codename": "delete_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view task result",
+      "content_type": 20,
+      "codename": "view_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add chord counter",
+      "content_type": 21,
+      "codename": "add_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change chord counter",
+      "content_type": 21,
+      "codename": "change_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete chord counter",
+      "content_type": 21,
+      "codename": "delete_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view chord counter",
+      "content_type": 21,
+      "codename": "view_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add group result",
+      "content_type": 22,
+      "codename": "add_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change group result",
+      "content_type": 22,
+      "codename": "change_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete group result",
+      "content_type": 22,
+      "codename": "delete_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view group result",
+      "content_type": 22,
+      "codename": "view_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add crontab",
+      "content_type": 23,
+      "codename": "add_crontabschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change crontab",
+      "content_type": 23,
+      "codename": "change_crontabschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete crontab",
+      "content_type": 23,
+      "codename": "delete_crontabschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view crontab",
+      "content_type": 23,
+      "codename": "view_crontabschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add interval",
+      "content_type": 24,
+      "codename": "add_intervalschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change interval",
+      "content_type": 24,
+      "codename": "change_intervalschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete interval",
+      "content_type": 24,
+      "codename": "delete_intervalschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view interval",
+      "content_type": 24,
+      "codename": "view_intervalschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add periodic task",
+      "content_type": 25,
+      "codename": "add_periodictask"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change periodic task",
+      "content_type": 25,
+      "codename": "change_periodictask"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete periodic task",
+      "content_type": 25,
+      "codename": "delete_periodictask"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view periodic task",
+      "content_type": 25,
+      "codename": "view_periodictask"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+      "name": "Can add periodic tasks",
+      "content_type": 26,
+      "codename": "add_periodictasks"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+      "name": "Can change periodic tasks",
+      "content_type": 26,
+      "codename": "change_periodictasks"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+      "name": "Can delete periodic tasks",
+      "content_type": 26,
+      "codename": "delete_periodictasks"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+      "name": "Can view periodic tasks",
+      "content_type": 26,
+      "codename": "view_periodictasks"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+      "name": "Can add solar event",
+      "content_type": 27,
+      "codename": "add_solarschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+      "name": "Can change solar event",
+      "content_type": 27,
+      "codename": "change_solarschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+      "name": "Can delete solar event",
+      "content_type": 27,
+      "codename": "delete_solarschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+      "name": "Can view solar event",
+      "content_type": 27,
+      "codename": "view_solarschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 109,
+    "fields": {
+      "name": "Can add clocked",
+      "content_type": 28,
+      "codename": "add_clockedschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 110,
+    "fields": {
+      "name": "Can change clocked",
+      "content_type": 28,
+      "codename": "change_clockedschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 111,
+    "fields": {
+      "name": "Can delete clocked",
+      "content_type": 28,
+      "codename": "delete_clockedschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 112,
+    "fields": {
+      "name": "Can view clocked",
+      "content_type": 28,
+      "codename": "view_clockedschedule"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 113,
+    "fields": {
+      "name": "Can add версия",
+      "content_type": 29,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 114,
+    "fields": {
+      "name": "Can change версия",
+      "content_type": 29,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 115,
+    "fields": {
+      "name": "Can delete версия",
+      "content_type": 29,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 116,
+    "fields": {
+      "name": "Can view версия",
+      "content_type": 29,
+      "codename": "view_version"
+    }
+  },
+  {
     "model": "auth.user",
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$600000$n04UjLhTm89KW2duSuKJkb$EFJs3RJ7N3Qj6tXhpEHlf9ogZvAtadIbCdqTVhJlP30=",
-      "last_login": "2023-05-08T18:24:41.563Z",
+      "last_login": "2023-06-07T09:23:10.628Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "",
@@ -1757,11 +2781,139 @@
     }
   },
   {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "mail",
+      "model": "client"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "mail",
+      "model": "mailing"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "mail",
+      "model": "message"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "mail",
+      "model": "mailinglogs"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "taskresult"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "chordcounter"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "groupresult"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "crontabschedule"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "intervalschedule"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "periodictask"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "periodictasks"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "solarschedule"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 28,
+    "fields": {
+      "app_label": "django_celery_beat",
+      "model": "clockedschedule"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 29,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0zuglkzocojwbwlw85lw23u48h5yb296",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8hgIu3fsNZJihUjU0Ke3K-O_apAvd3nPOfYmE21rT1suSJhZnocXpd8tIj9J2wHdst1nS3NZlynJX5EG7vM5cnpfD_Tuo2Ou3NgoAyA9Q0ALi4PVI2YG1LntvSlAU48iKQmStnDEMEAA4RxVcAGvE-wPEcTa0:1q3FtR:ec_RyS-8bsPV_ILi4QpswXLfbq-8Cme96886dJ_6knA",
+      "expire_date": "2023-06-11T12:53:05.782Z"
+    }
+  },
+  {
     "model": "sessions.session",
     "pk": "3w96jvd2h9u8lnuti296jv91ft005klg",
     "fields": {
       "session_data": ".eJxVjMsOwiAQRf-FtSE8hgIu3fsNZJihUjU0Ke3K-O_apAvd3nPOfYmE21rT1suSJhZnocXpd8tIj9J2wHdst1nS3NZlynJX5EG7vM5cnpfD_Tuo2Ou3NgoAyA9Q0ALi4PVI2YG1LntvSlAU48iKQmStnDEMEAA4RxVcAGvE-wPEcTa0:1pvlMD:c3yaUIEzT-Clk9yNR2hfUpbuyz8ZlRdNozkU2i-A_0g",
       "expire_date": "2023-05-21T20:51:49.157Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "l4iwr5lbhhqz1e9r9jqkpke9rweqkbuq",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8hgIu3fsNZJihUjU0Ke3K-O_apAvd3nPOfYmE21rT1suSJhZnocXpd8tIj9J2wHdst1nS3NZlynJX5EG7vM5cnpfD_Tuo2Ou3NgoAyA9Q0ALi4PVI2YG1LntvSlAU48iKQmStnDEMEAA4RxVcAGvE-wPEcTa0:1q6pNm:toBX_7id0xZkbVQp_XaPTn7XBTsetdPRD_pirYvVMOk",
+      "expire_date": "2023-06-21T09:23:10.670Z"
     }
   },
   {
@@ -1805,8 +2957,8 @@
       "image": "products/dishwasher.jpg",
       "category": 1,
       "price": 19714,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1818,8 +2970,8 @@
       "image": "products/kitchenset_u5CsH1m.jpg",
       "category": 3,
       "price": 21926,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1831,8 +2983,8 @@
       "image": "products/teaset.jpg",
       "category": 2,
       "price": 1527,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1844,8 +2996,8 @@
       "image": "products/oven.png",
       "category": 1,
       "price": 17623,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1857,8 +3009,8 @@
       "image": "products/table_8Egsxo1.jpg",
       "category": 3,
       "price": 7536,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1870,8 +3022,8 @@
       "image": "products/microwave_SJq8qaa.jpg",
       "category": 1,
       "price": 4256,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1883,8 +3035,8 @@
       "image": "products/knife.jpg",
       "category": 2,
       "price": 768,
-      "created_date": "2023-05-08",
-      "changed_date": "2023-05-08"
+      "created_date": "2023-05-08T00:00:00Z",
+      "changed_date": "2023-05-08T00:00:00Z"
     }
   },
   {
@@ -1915,16 +3067,86 @@
     }
   },
   {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 4,
+      "num_of_version": 11,
+      "title": "SuperPro",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 2,
+      "num_of_version": 1,
+      "title": "Good",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 7,
+    "fields": {
+      "product": 5,
+      "num_of_version": 11,
+      "title": "PRO",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 8,
+    "fields": {
+      "product": 6,
+      "num_of_version": 142,
+      "title": "MaxBigPro",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 9,
+    "fields": {
+      "product": 7,
+      "num_of_version": -3,
+      "title": "Mini",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 10,
+    "fields": {
+      "product": 1,
+      "num_of_version": 5,
+      "title": "PRO",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 11,
+    "fields": {
+      "product": 3,
+      "num_of_version": 1,
+      "title": "Norm",
+      "is_active": true
+    }
+  },
+  {
     "model": "blog.blog",
     "pk": 4,
     "fields": {
       "title": "Зачем россияне кладут грязную одежду в микроволновку?",
-      "slug": "зачем-россияне-кладут-грязную-одежду-в-микроволновку",
+      "slug": "zachem-rossijane-kladut-grjaznuju-odezhdu-v-mikrovolnovku",
       "content": "Оказывается, с помощью микроволновки можно отстирать сильно въевшиеся пятна с грязной одежды. \r\nОчистка в таких ваннах происходит за счёт совместного действия различных нелинейных эффектов, возникающих в жидкости под действием мощных ультразвуковых колебаний. Главный такой эффект — это кавитация. Это процесс образования пузырьков в жидкости под воздействием ультразвуковых волн. При продолжающемся воздействии пузырьки схлопываются и производят эффект ударной волны, которая разрушает загрязнения.",
       "image": "blog/useofmicrowave.jpeg",
       "create_date": "2023-05-15",
       "is_published": true,
-      "count_of_view": 4
+      "count_of_view": 22
     }
   },
   {
@@ -1932,12 +3154,12 @@
     "pk": 5,
     "fields": {
       "title": "Форма имеет значение",
-      "slug": "форма-имеет-значение",
+      "slug": "forma-imeet-znachenie",
       "content": "Существует предположение: оригинальная форма бокала для мартини была придумана во времена сухого закона в США. Объясняется это тем, что из открытой ёмкости с широким краем проще выплеснуть содержимое во время полицейского рейда. Позднее эти коктейльные бокалы стали неофициальным символом всех баров мира.",
       "image": "blog/martiniglass.png",
       "create_date": "2023-05-15",
       "is_published": true,
-      "count_of_view": 2
+      "count_of_view": 17
     }
   }
 ]

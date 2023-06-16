@@ -11,8 +11,8 @@
                     </h3>
                     <small class="mb-1 text-muted">{{ product.created_date }}</small>
                     <p class="card-text mb-auto">{{ product.description }}</p>
-                    <a href="{% url 'catalog:product_items' product.pk %}" class="btn btn-secondary my-3"
-                       style="background: #0062cc">Купить</a>
+                    <a href="{% url 'catalog:product_form' product.pk %}" class="btn btn-secondary my-3"
+                       style="background: green">Изменить</a>
                 </div>
                 <img src="{% mediapath product.image %}" alt={{ product.name }} width="350" height="300" id="part1">
             </div>

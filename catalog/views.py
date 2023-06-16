@@ -1,7 +1,9 @@
-from django.urls import reverse_lazy
+from django.forms import inlineformset_factory
+from django.urls import reverse_lazy, reverse
 from django.views import generic
 
-from catalog.models import Product, Contact
+from catalog.forms import ProductForm, VersionForm
+from catalog.models import Product, Contact, Version
 
 
 class ProductsListView(generic.ListView):
@@ -30,8 +32,36 @@ class ProductCreateView(generic.CreateView):
     extra_context = {
         "title": "Внести новый товар"
     }
-    fields = ('name', 'description', 'image', 'category', 'price', 'created_date', 'changed_date')
+    form_class = ProductForm
     success_url = reverse_lazy('catalog:catalog')
 
 
+class ProductUpdateView(generic.UpdateView):
+    model = Product
+    # fields = '__all__'
+    form_class = ProductForm
+    template_name = 'catalog/product_form_with_formset.html'
 
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        VersionFormset = inlineformset_factory(Product, Version, form=VersionForm, extra=1)
+
+        if self.request.method == 'POST':
+            context_data['formset'] = VersionFormset(self.request.POST, instance=self.object)
+
+        else:
+            context_data['formset'] = VersionFormset(instance=self.object)
+
+        return context_data
+
+    def form_valid(self, form):
+        context_data = self.get_context_data()
+        formset = context_data['formset']
+        self.object = form.save()
+        if formset.is_valid():
+            formset.instance = self.object
+            formset.save()
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('catalog:catalog')
