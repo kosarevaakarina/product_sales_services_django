@@ -28,7 +28,7 @@ class Product(models.Model):
     price = models.IntegerField(verbose_name='Цена за покупку')
     created_date = models.DateField(verbose_name='Дата создания')
     changed_date = models.DateField(verbose_name='Дата последнего изменения')
-
+    is_published = models.BooleanField(default=False, verbose_name='признак активности товара')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE)
 
     def __str__(self):

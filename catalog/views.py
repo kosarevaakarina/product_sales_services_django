@@ -26,11 +26,6 @@ class ContactCreateView(generic.CreateView):
     model = Contact
     fields = ('name', 'phone', 'message')
 
-    def form_valid(self, form):
-        self.object = form.save()
-        self.object.user = self.request.user
-        self.object.save()
-
 
 class ProductCreateView(generic.CreateView):
     model = Product
@@ -39,6 +34,12 @@ class ProductCreateView(generic.CreateView):
     }
     form_class = ProductForm
     success_url = reverse_lazy('catalog:catalog')
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.user = self.request.user
+        self.object.save()
+        return super().form_valid(form)
 
 
 class ProductUpdateView(generic.UpdateView):
