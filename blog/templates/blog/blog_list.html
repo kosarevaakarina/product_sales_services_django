@@ -4,6 +4,8 @@
     {% for blog in blog_list %}
         {% include 'blog/includes/inc_blog_card.html' %}
     {% endfor %}
-    <a href="{% url 'blog:blog_form' %}" class="btn btn-secondary my-3"
-                       style="background: #0062cc">Создать</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'blog:blog_form' %}" class="btn btn-secondary my-3"
+           style="background: #0062cc">Создать</a>
+    {% endif %}
 {% endblock %}

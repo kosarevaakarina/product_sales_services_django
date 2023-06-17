@@ -14,7 +14,10 @@
             <small class="text-muted">{{product.changed_date}}</small>
             <p class="card-text">{{product.description | truncatechars:100}}</p>
             <h4 style="color: #a41515">Цена: {{product.price}} р.</h4>
-            <small class="text-muted">{{product.category}}</small>
+            <small class="text-muted">{{product.category}}</small><br>
+            {% if product.user %}
+                <small class="text-muted">Продавец: {{product.user}}</small>
+            {% endif %}
             <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                     <a href="{% url 'catalog:product_items' product.pk %}" class="btn btn-secondary my-3"

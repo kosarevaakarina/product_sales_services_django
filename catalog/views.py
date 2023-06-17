@@ -35,10 +35,15 @@ class ProductCreateView(generic.CreateView):
     form_class = ProductForm
     success_url = reverse_lazy('catalog:catalog')
 
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.user = self.request.user
+        self.object.save()
+        return super().form_valid(form)
+
 
 class ProductUpdateView(generic.UpdateView):
     model = Product
-    # fields = '__all__'
     form_class = ProductForm
     template_name = 'catalog/product_form_with_formset.html'
 

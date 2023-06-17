@@ -1,16 +1,9 @@
-<div class="col-lg-5 col-sm-6" style="margin-top: 3%">
-    <tr>
-        <td class="w-25">Наш адрес:</td>
-        <td>Санкт-Петербург, Лиговский проспект, 30</td>
-        <br>
-    </tr>
-    <tr>
-        <td class="w-25">ИНН:</td>
-        <td>7816526337</td>
-        <br>
-    </tr>
-    <tr>
-        <td class="w-25">Номер:</td>
-        <td>8 (800) 555-35-35</td>
-    </tr>
-</div>
+<a class="row">
+    {% if user.is_authenticated %}
+    <a href="{% url 'users:logout' %}" class="btn" style="color: black">Выйти</a><br>
+    <a href="{% url 'users:profile' %}" class="btn" style="color: black">Профиль</a>
+    {% else %}
+    <a href="{% url 'users:login' %}" class="btn" style="color: black">Войти</a><br>
+    <a href="{% url 'users:register' %}" class="btn" style="color: black">Зарегистрироваться</a>
+    {% endif %}
+</a>

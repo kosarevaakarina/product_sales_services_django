@@ -6,6 +6,7 @@ NULLABLE = {'blank': True, 'null': True}
 
 
 class Blog(models.Model):
+    """Модель описывающая пост в блоге"""
     title = models.CharField(max_length=150, verbose_name='Заголовок')
     slug = models.SlugField(max_length=150, verbose_name='Человекопонятный URL', **NULLABLE)
     content = models.TextField(verbose_name='Содержимое')
@@ -15,6 +16,7 @@ class Blog(models.Model):
     count_of_view = models.PositiveIntegerField(default=0, verbose_name='Количество просмотров')
 
     def delete(self, *args, **kwargs):
+        """Функция, делающая пост не активным"""
         self.is_published = False
         self.save()
 
@@ -22,6 +24,7 @@ class Blog(models.Model):
         return f'{self.title}'
 
     def increase_count_of_view(self):
+        """Увеличивает счетчик просмотров на 1"""
         self.count_of_view += 1
         self.save()
 
