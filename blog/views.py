@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 from django.utils.text import slugify
@@ -31,10 +32,11 @@ class BlogDetailView(generic.DetailView):
         return object_item
 
 
-class BlogCreateView(generic.CreateView):
+class BlogCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
     model = Blog
     fields = ('title', 'content', 'image', 'create_date')
     success_url = reverse_lazy('blog:home')
+    permission_required = 'blog.add_blog'
 
     def form_valid(self, form):
         post = form.save(commit=False)
@@ -43,17 +45,19 @@ class BlogCreateView(generic.CreateView):
         return super(BlogCreateView, self).form_valid(form)
 
 
-class BlogUpdateView(generic.UpdateView):
+class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
     model = Blog
     fields = ('title', 'slug', 'content', 'image', 'create_date')
+    permission_required = 'blog.change_blog'
 
     def get_success_url(self):
         return reverse('blog:blog_detail', kwargs={'slug': self.object.slug})
 
 
-class BlogDeleteView(generic.DeleteView):
+class BlogDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
     model = Blog
     success_url = reverse_lazy('blog:home')
+    permission_required = 'blog.delete_blog'
 
     def get_queryset(self):
         queryset = super().get_queryset()
