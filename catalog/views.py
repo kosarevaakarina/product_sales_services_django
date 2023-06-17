@@ -45,7 +45,7 @@ class ProductCreateView(LoginRequiredMixin, generic.CreateView):
         return super().form_valid(form)
 
 
-class ProductUpdateCuttedView(generic.UpdateView):
+class ProductUpdateCuttedView(PermissionRequiredMixin, generic.UpdateView):
     model = Product
     template_name = 'catalog/product_form.html'
     form_class = ProductFormCutted
