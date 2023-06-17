@@ -19,7 +19,7 @@ class ProductForm(FormStyleMixin, forms.ModelForm):
     """Форма для создания товара"""
     class Meta:
         model = Product
-        fields = '__all__'
+        exclude = ('user',)
 
     def clean_name(self):
         """Валидация названия товара (запрещает вводить слова из списка)"""
