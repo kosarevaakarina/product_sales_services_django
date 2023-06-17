@@ -3,3 +3,4 @@ Pillow
 psycopg2-binary
 ipython
 transliterate
+python-dotenv
