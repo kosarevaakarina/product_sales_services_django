@@ -1,8 +1,11 @@
+from django.contrib.auth.decorators import permission_required
+from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
 from django.forms import inlineformset_factory
+from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 
-from catalog.forms import ProductForm, VersionForm
+from catalog.forms import ProductForm, VersionForm, ProductFormCutted
 from catalog.models import Product, Contact, Version
 
 
@@ -27,7 +30,7 @@ class ContactCreateView(generic.CreateView):
     fields = ('name', 'phone', 'message')
 
 
-class ProductCreateView(generic.CreateView):
+class ProductCreateView(LoginRequiredMixin, generic.CreateView):
     model = Product
     extra_context = {
         "title": "Внести новый товар"
@@ -42,10 +45,20 @@ class ProductCreateView(generic.CreateView):
         return super().form_valid(form)
 
 
+class ProductUpdateCuttedView(generic.UpdateView):
+    model = Product
+    template_name = 'catalog/product_form.html'
+    form_class = ProductFormCutted
+    permission_required = 'catalog.can_edit_description_and_category_product'
+
+    def get_success_url(self):
+        return reverse('catalog:product_items', kwargs={'pk': self.object.pk})
+
+
 class ProductUpdateView(generic.UpdateView):
     model = Product
-    form_class = ProductForm
     template_name = 'catalog/product_form_with_formset.html'
+    form_class = ProductForm
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
@@ -69,4 +82,11 @@ class ProductUpdateView(generic.UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('catalog:catalog')
+        return reverse('catalog:product_items', kwargs={'pk': self.object.pk})
+
+
+@permission_required('catalog.set_published_product')
+def change_is_published(request, pk):
+    product_item = get_object_or_404(Product, pk=pk)
+    product_item.toggle_is_published()
+    return redirect(reverse('catalog:product_items', args=[product_item.pk]))

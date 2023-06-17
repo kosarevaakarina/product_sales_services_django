@@ -31,6 +31,10 @@ class Product(models.Model):
     is_published = models.BooleanField(default=False, verbose_name='признак активности товара')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE)
 
+    def toggle_is_published(self):
+        self.is_published = not self.is_published
+        self.save()
+
     def __str__(self):
         return f'{self.name}'
 
@@ -38,6 +42,16 @@ class Product(models.Model):
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
         ordering = ('name',)
+        permissions = [
+            (
+                'set_published_product',
+                'Can publish product'
+            ),
+            (
+                'can_edit_description_and_category_product',
+                'Can edit description and category product'
+            )
+        ]
 
 
 class Contact(models.Model):

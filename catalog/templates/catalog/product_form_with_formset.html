@@ -11,26 +11,28 @@
                     <div class="card-body">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <input type="submit" class="btn btn-success" value="Создать">
+                            <input type="submit" class="btn btn-success" value="Изменить">
                     </div>
                 </div>
             </div>
+            {% if user == product.user %}
             <div class="col-6">
                 <div class="card">
                     <div class="card-header">
                         Версии
                     </div>
                     <div class="card-body">
-                    <table class="table">
-                        {{ formset.management_form }}
-                        {% for form in formset.forms %}
-                            <tr class="subject-form">
-                                <td>{{ form.as_p }}</td>
-                            </tr>
-                        {% endfor %}
-                    </table>
+                        <table class="table">
+                            {{ formset.management_form }}
+                            {% for form in formset.forms %}
+                                <tr class="subject-form">
+                                    <td>{{ form.as_p }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                     </div>
                 </div>
+            {% endif %}
         </form>
     </div>
 {% endblock %}

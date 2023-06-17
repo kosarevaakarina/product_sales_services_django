@@ -11,9 +11,25 @@
                     </h3>
                     <small class="mb-1 text-muted">{{ product.created_date }}</small>
                     <p class="card-text mb-auto">{{ product.description }}</p>
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'catalog:product_form' product.pk %}" class="btn btn-secondary my-3"
-                       style="background: green">Изменить</a>
+
+                    {% if user == product.user or user.is_superuser %}
+                        <a href="{% url 'catalog:product_form' product.pk %}" class="btn btn-secondary my-3"
+                           style="background: green">Изменить</a>
+                    {% elif perms.catalog.can_edit_description_and_category_product %}
+                        <a href="{% url 'catalog:product_form_cutted' product.pk %}" class="btn btn-secondary my-3"
+                           style="background: green">Изменить</a>
+                    {% endif %}
+
+                    {% if perms.catalog.set_published_product %}
+
+                        {% if product.is_published %}
+                            <a href="{% url 'catalog:change_is_published' product.pk %}" class="btn btn-secondary my-3"
+                               style="background: red">Удалить</a>
+                        {% else %}
+                            <a href="{% url 'catalog:change_is_published' product.pk %}" class="btn btn-secondary my-3"
+                               style="background: red">Опубликовать</a>
+                        {% endif %}
+
                     {% endif %}
                 </div>
                 <img src="{% mediapath product.image %}" alt={{ product.name }} width="350" height="300" id="part1">

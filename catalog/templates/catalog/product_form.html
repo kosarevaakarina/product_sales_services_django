@@ -5,7 +5,9 @@
         {% csrf_token %}
         <div class="container">
             {{ form.as_p }}
-            <input type="submit" class="btn btn-success" value="Создать">
+            {% if perms.catalog.can_edit_description_and_category_product %}
+                <input type="submit" class="btn btn-success" value="Изменить">
+            {% endif %}
         </div>
     </form>
 {% endblock %}
