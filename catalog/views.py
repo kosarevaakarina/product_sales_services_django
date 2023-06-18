@@ -4,9 +4,9 @@ from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic
-
 from catalog.forms import ProductForm, VersionForm, ProductFormCutted
-from catalog.models import Product, Contact, Version
+from catalog.models import Product, Contact, Version, Category
+from catalog.services.cache import get_cache_categories
 
 
 class ProductsListView(generic.ListView):
@@ -90,3 +90,14 @@ def change_is_published(request, pk):
     product_item = get_object_or_404(Product, pk=pk)
     product_item.toggle_is_published()
     return redirect(reverse('catalog:product_items', args=[product_item.pk]))
+
+
+class CategoryListView(generic.ListView):
+    model = Category
+    queryset = get_cache_categories()
+
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        context_data['product_list'] = Product.objects.all()
+        context_data['title'] = "Категории товаров"
+        return context_data
