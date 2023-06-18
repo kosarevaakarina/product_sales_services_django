@@ -5,8 +5,9 @@
         {% include 'catalog/includes/inc_product_card.html' %}
     {% endfor %}
     <div class="container">
-    {% if user.is_authenticated %}
-    <a href="{% url 'catalog:save_product' %}" class="btn btn-secondary my-3"
-                       style="background: darkgreen">Создать</a>
-    {% endif %}
+        {% if user.is_authenticated %}
+            <a href="{% url 'catalog:save_product' %}" class="btn btn-secondary my-3"
+               style="background: darkgreen">Создать</a>
+        {% endif %}
+    </div>
 {% endblock %}

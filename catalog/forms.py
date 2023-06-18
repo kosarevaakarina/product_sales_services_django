@@ -19,7 +19,7 @@ class ProductForm(FormStyleMixin, forms.ModelForm):
     """Форма для создания товара"""
     class Meta:
         model = Product
-        exclude = ('user',)
+        exclude = ('user', 'is_published')
 
     def clean_name(self):
         """Валидация названия товара (запрещает вводить слова из списка)"""
@@ -34,6 +34,13 @@ class ProductForm(FormStyleMixin, forms.ModelForm):
         if cleaned_data.lower() in FORBIDDEN_WORDS:
             raise forms.ValidationError(f"Нельзя вносить слово {cleaned_data}, замените его на другое")
         return cleaned_data
+
+
+class ProductFormCutted(ProductForm, FormStyleMixin, forms.ModelForm):
+    """Форма для изменения полей описания и категории"""
+    class Meta:
+        model = Product
+        fields = ('description', 'category')
 
 
 class VersionForm(FormStyleMixin, forms.ModelForm):
